@@ -1,0 +1,33 @@
+﻿header {
+    text-align: center;
+    background-color: gray;
+}
+
+﻿body {
+    background-color: lightgoldenrodyellow;
+    color: darkblue;
+}
+
+
+h1, h2 {
+    text-align: center;
+}
+
+footer {
+    text-align: center;
+    top: 100%;
+}
+
+.bottom {
+    top: 100px;
+}
+
+.w-100 {
+    background-color: indianred;
+    word-spacing: 10px;
+}
+
+tr {
+    background-color: darkslategrey;
+    color: white;
+}

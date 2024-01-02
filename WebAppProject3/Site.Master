@@ -1,0 +1,63 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="WebAppProject3.SiteMaster" %>
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <link href="StyleSheet1.css" rel="stylesheet" />
+    <style type="text/css">
+        .auto-style2 {
+            width: 1291px;
+            height: 63px;
+            margin-top: 328px;
+        }
+        .auto-style3 {
+            position: absolute;
+            left: 0%;
+            top: 23%;
+            width: 98%;
+            height: 41%;
+            background-color: white;
+            color: darkmagenta;
+        }
+        .auto-style4 {
+            width: 1285px;
+        }
+        .auto-style5 {
+            height: 23px;
+        }
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+       <div> <header>            
+            <h1 style="background-color: #CCCC00">WELCOME TO SCHOOL</h1>
+            </header> 
+               <table class="auto-style4" style="background-color: #FFCC66">
+                        <tr>
+                            <td style="background-color: #00FFFF; text-align: center;" class="auto-style5">School Management</td>
+                            <td style="background-color: #3399FF" class="auto-style5">
+                                <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="~/Students.aspx">Students</asp:HyperLink>
+                            </td>
+                            <td style="background-color: #33CCFF" class="auto-style5">
+                                <asp:HyperLink ID="HyperLink2" runat="server" NavigateUrl="~/Teachers.aspx">Teachers</asp:HyperLink>
+                            </td>
+                            <td style="background-color: #808080" class="auto-style5">
+                                <asp:HyperLink ID="HyperLink3" runat="server" NavigateUrl="~/Courses.aspx">Courses</asp:HyperLink>
+                            </td>
+                        </tr>
+                    </table>
+    
+          <div class="auto-style3">
+        <asp:ContentPlaceHolder ID="MainContent" runat="server"></asp:ContentPlaceHolder>
+            </div>
+
+        <footer>
+            <h1 class="auto-style2" style="background-color: #CC9900">&copy; Copyright All rights reserved.</h1>            
+        </footer>
+            </div>
+    </form>
+</body>
+</html>
